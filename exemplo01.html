@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 01</title>
+</head>
+
+<body>
+    <script>
+        /*
+          Estrutura condicional (seleção).
+          Variável.
+          Entrada e saída de dados.
+        */
+        var produto = prompt("Informe o produto:");
+
+        switch (produto.toLowerCase()) {
+            case "arroz":
+                document.write("Você comprou arroz <br>");
+                document.write("Preço: R$ 8,97");
+                break;
+            case "feijao":
+                document.write("Você digitou sem o ~. <br>");
+            case "feijão":
+                document.write("Você comprou feijão <br>");
+                document.write("Preço: R$ 7,89");
+                break;
+            case "cafe":
+                document.write("Você digitou sem o ´. <br>");
+            case "café":
+                document.write("Você comprou café <br>");
+                document.write("Preço: R$ 18,45");
+                break;
+            default:
+                document.write("Produto inválido!")
+
+        }
+    </script>
+</body>
+
+</html>
