@@ -17,6 +17,9 @@
         }
 
         .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 30rem;
             min-height: 25rem;
             margin: 1rem auto;
@@ -27,6 +30,18 @@
         .produto {
             background-color: #9709e3;
             color: #89fc05;
+            width: 8rem;
+            height: 8rem;
+            border-radius: .5rem;
+            padding: 1rem;
+            font-weight: bold;
+            margin: 1rem;
+            box-shadow: .5rem .5rem .3rem .01rem #a19d9d;
+        }
+
+        .preco {
+            background-color: #89fc05;
+            color: #9709e3;
             width: 8rem;
             height: 8rem;
             border-radius: .5rem;
@@ -52,19 +67,19 @@
             switch (produto.toLowerCase()) {
                 case "arroz":
                     document.write("<div class='produto'>Você comprou arroz.</div>");
-                    document.write("Preço: R$ 8,97");
+                    document.write("<div class='preco'>Preço: R$ 8,97</div>");
                     break;
                 case "feijao":
                     document.write("Você digitou sem o ~. <br>");
                 case "feijão":
                     document.write("<div class='produto'>Você comprou feijão.</div>");
-                    document.write("Preço: R$ 7,89");
+                    document.write("<div class='preco'>Preço: R$ 7,89</div>");
                     break;
                 case "cafe":
                     document.write("Você digitou sem o ´. <br>");
                 case "café":
                     document.write("<div class='produto'>Você comprou café.</div>");
-                    document.write("Preço: R$ 18,45");
+                    document.write("<div class='preco'>Preço: R$ 18,45</div>");
                     break;
                 default:
                     document.write("Produto inválido!")
