@@ -20,7 +20,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 30rem;
+            width: 40rem;
             min-height: 25rem;
             margin: 1rem auto;
             border: 1px solid #a19d9d;
@@ -37,7 +37,15 @@
             color: #9709e3;
         }
 
-        .produto-preco {
+        .alerta {
+            background-color: red;
+            color: white;
+        }
+
+        .produto,
+        .preco,
+        .alerta {
+            text-align: center;
             width: 8rem;
             height: 8rem;
             border-radius: .5rem;
@@ -62,23 +70,23 @@
 
             switch (produto.toLowerCase()) {
                 case "arroz":
-                    document.write("<div class='produto produto-preco'>Você comprou arroz.</div>");
-                    document.write("<div class='preco produto-preco'>Preço: R$ 8,97</div>");
+                    document.write("<div class='produto'>Você comprou arroz.</div>");
+                    document.write("<div class='preco'>Preço: R$ 8,97</div>");
                     break;
                 case "feijao":
-                    document.write("Você digitou sem o ~. <br>");
+                    document.write("<div class='alerta'>Você digitou sem o ~.</div>");
                 case "feijão":
-                    document.write("<div class='produto produto-preco'>Você comprou feijão.</div>");
+                    document.write("<div class='produto'>Você comprou feijão.</div>");
                     document.write("<div class='preco produto-preco'>Preço: R$ 7,89</div>");
                     break;
                 case "cafe":
-                    document.write("Você digitou sem o ´. <br>");
+                    document.write("<div class='alerta'>Você digitou sem o ´.</div>");
                 case "café":
-                    document.write("<div class='produto produto-preco'>Você comprou café.</div>");
-                    document.write("<div class='preco produto-preco'>Preço: R$ 18,45</div>");
+                    document.write("<div class='produto'>Você comprou café.</div>");
+                    document.write("<div class='preco'>Preço: R$ 18,45</div>");
                     break;
                 default:
-                    document.write("Produto inválido!")
+                    document.write("<div class='alerta'>Produto inválido!</div>")
 
             }
         </script>
