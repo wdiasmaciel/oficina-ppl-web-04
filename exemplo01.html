@@ -23,6 +23,18 @@
             border: 1px solid #a19d9d;
             box-shadow: .5rem .5rem .3rem .01rem #a19d9d;
         }
+
+        .produto {
+            background-color: #9709e3;
+            color: #89fc05;
+            width: 8rem;
+            height: 8rem;
+            border-radius: .5rem;
+            padding: 1rem;
+            font-weight: bold;
+            margin: 1rem;
+            box-shadow: .5rem .5rem .3rem .01rem #a19d9d;
+        }
     </style>
 </head>
 
@@ -39,19 +51,19 @@
 
             switch (produto.toLowerCase()) {
                 case "arroz":
-                    document.write("Você comprou arroz <br>");
+                    document.write("<div class='produto'>Você comprou arroz.</div>");
                     document.write("Preço: R$ 8,97");
                     break;
                 case "feijao":
                     document.write("Você digitou sem o ~. <br>");
                 case "feijão":
-                    document.write("Você comprou feijão <br>");
+                    document.write("<div class='produto'>Você comprou feijão.</div>");
                     document.write("Preço: R$ 7,89");
                     break;
                 case "cafe":
                     document.write("Você digitou sem o ´. <br>");
                 case "café":
-                    document.write("Você comprou café <br>");
+                    document.write("<div class='produto'>Você comprou café.</div>");
                     document.write("Preço: R$ 18,45");
                     break;
                 default:
